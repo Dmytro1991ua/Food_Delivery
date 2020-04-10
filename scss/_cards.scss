@@ -1,0 +1,218 @@
+.cards {
+    padding-bottom: 9.1rem;
+
+    @include respond(tab-port) {
+        padding-bottom: 5.1rem;
+    }
+
+
+    &__line {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__line:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+
+    &__card {
+        background: #FFFFFF;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+        border-radius: 7px;
+        overflow: hidden;
+        transition: all .4s;
+        cursor: pointer;
+        flex-basis: 31%;
+        margin-bottom: 1.5rem;
+
+        @include respond(tab-port) {
+            flex-basis: 49%;
+            margin-bottom: 1.2rem;
+        }
+
+
+        @include respond(small-phone) {
+            flex-basis: 100%;
+        }
+    }
+
+    &__card:hover {
+        box-shadow: 0.5rem 0.7rem 0.2rem rgba(0, 0, 0, 0.4);
+    }
+
+    &__text {
+        padding: 2.1rem 2.3rem 3.5rem 2.4rem;
+        margin-bottom: 3.5rem;
+
+        @include respond(laptop) {
+            margin-bottom: 0rem;
+        }
+    }
+
+    &__img {
+        max-width: 38.4rem;
+        max-height: 25rem;
+        object-fit: cover;
+
+        @include respond(small-phone) {
+            width: 100%;
+            max-width: none;
+        }
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+
+        @include respond(laptop) {
+            margin-bottom: 4rem;
+        }
+
+
+        &--aligned {
+            @include respond(laptop) {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2.4rem;
+
+        @include respond(laptop) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+
+        @include respond(phone) {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+
+        &--changed {
+            margin-bottom: 0rem;
+        }
+    }
+
+    &__rating {
+        font-weight: bold;
+        font-size: 1.8rem;
+        line-height: 3.2rem;
+        color: #FFC107;
+        margin-right: 2.6rem;
+        display: flex;
+        align-items: baseline;
+
+        @include respond(laptop) {
+            margin-right: 1.5rem;
+        }
+
+
+        @include respond(phone) {
+            flex-basis: 100%;
+        }
+
+
+        &--changed {
+            @include respond(phone) {
+                flex-basis: 0;
+            }
+        }
+    }
+
+    &__rating-icon {
+        margin-right: 7.5px;
+    }
+
+    &__price, &__category {
+        font-size: 18px;
+        line-height: 32px;
+        color: #8C8C8C;
+    }
+
+    &__price {
+        margin-right: 1rem;
+
+        &--black {
+            font-weight: bold;
+            font-size: 2.0rem;
+            line-height: 3.2rem;
+            color: #000000;
+            margin-left: 3rem;
+
+            @include respond(phone) {
+                margin-left: 2rem;
+            }
+        }
+    }
+
+    &__category {
+        text-overflow: ellipsis; // Определяет параметры видимости текста в блоке, если текст целиком не помещается в заданную область.
+        overflow: hidden; //Обрезаем все, что не помещается в область
+        white-space: nowrap; /* Запрещаем перенос строк */
+    }
+
+    &__category::before {
+        content: "";
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        background: #8C8C8C;
+        border-radius: 50%;
+        vertical-align: middle;
+        margin-right: 1rem;
+    }
+
+    //styles for cards which related for Restaurant page starts
+    &__buttons {
+        display: flex;
+        align-items: center;
+
+        @include respond(phone) {
+            flex-direction: column;
+        }
+    }
+
+    &__ingredients {
+        font-size: 1.8rem;
+        line-height: 2.1rem;
+        color: #8C8C8C;
+    }
+
+    &__btn-text {
+        margin-right: 1rem;
+    }
+
+    //styles for cards which related for Restaurant page ends
+}
+
+.heading-3 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 3.2rem;
+    color: #000000;
+
+    &--reg {
+        font-weight: 400;
+    }
+
+    @include respond(phone) {
+        font-size: 2rem;
+    }
+}
+
+.heading-4 {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: #FFFFFF;
+    padding: 1px 8px;
+    background: #262626;
+    border-radius: 2px;
+}

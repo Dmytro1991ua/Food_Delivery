@@ -1,0 +1,71 @@
+.banner {
+    box-shadow: 0px 7px 12px rgba(158, 158, 163, 0.1);
+    background: #FFF1B8 url(../img/bunner-bg.png) no-repeat top -10rem right -24.7rem / 92.4rem;
+    border-radius: 10px;
+    padding: 7.1rem 6.9rem;
+    margin-bottom: 5.7rem;
+
+    @include respond(laptop) {
+        background-size: 75rem;
+        background-position: center right -30rem;
+    }
+
+
+    @include respond(tab-land) {
+        padding: 5rem;
+        background-size: 50rem;
+        background-position: center right -20rem;
+    }
+
+
+    @include respond(phone) {
+        padding: 5rem;
+        background-size: 47rem;
+        background-position: bottom 4rem right -21rem;
+    }
+
+
+    @include respond(small-phone) {
+        background-image: none;
+        text-align: center;
+    }
+
+
+    &__title {
+        font-weight: bold;
+        font-size: 3.9rem;
+        line-height: 4.6rem;
+        margin-bottom: 1.6rem;
+
+        @include respond(phone) {
+            font-size: 2.7rem;
+            margin-bottom: 1.2rem;
+        }
+    }
+
+    &__subtitle {
+        max-width: 54rem;
+        font-size: 2.4rem;
+        line-height: 2.8rem;
+
+        @include respond(tab-land) {
+            font-size: 1.68rem;
+            max-width: 40rem;
+        }
+
+
+        @include respond(phone) {
+            max-width: 30rem;
+        }
+
+
+        @include respond(small-phone) {
+            max-width: 100%;
+        }
+    }
+
+    &__title,
+    &__subtitle {
+        color: #302C34;
+    }
+}

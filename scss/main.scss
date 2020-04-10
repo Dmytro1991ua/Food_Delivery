@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap");
+
+@import "reset";
+@import "mixins";
+@import "header";
+@import "banner";
+@import "restaurants";
+@import "cards";
+@import "footer";
+@import "modal";
+
+html {
+    //background: linear-gradient(to bottom right, #FFE000, #799f0c) no-repeat;
+
+    @include respond(tab-land) {
+        font-size: 58.25%;
+    }
+
+
+    @include respond(tab-port) {
+        font-size: 56.25%;
+    }
+
+
+    @include respond(phone) {
+        font-size: 53.25%;
+    }
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 4.4rem;
+
+    //background: linear-gradient(to bottom right, #FFE000, #799f0c) no-repeat;
+}
+
+main {
+    background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+
+    @include respond(laptop) {
+        max-width: 97rem;
+    }
+
+
+    @include respond(tab-port) {
+        max-width: 75rem;
+    }
+
+
+    @include respond(phone) {
+        max-width: 59rem;
+    }
+
+
+    @include respond(small-phone) {
+        max-width: 90%;
+    }
+}

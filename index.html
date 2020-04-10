@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Delivery Food - доставка еды на дом</title>
+   <link rel="stylesheet" href="css/animate.css">
+   <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+   <div class="container">
+      <!--Header starts-->
+      <header class="header">
+         <div class="header__body">
+            <a href="#" class="logo logo-changed wow pulse" data-wow-delay=".1s" data-wow-iteration="10">
+               <img src="img/logo.svg" alt="Logo">
+            </a>
+            <form action="search" class="search delivery-address">
+               <input type="search" class="search__input" id="search-address" placeholder="Адрес Доставки" required>
+               <label for="search-address" class="search__label">Адрес доставки</label>
+            </form>
+            <div class="header__buttons">
+               <button class="header__btn header__btn--blue header__btn--changed">
+                  <img src="img/user.svg" class="header__btn-icon" alt="user logo">
+                  <span class="header__btn-text">Войти</span>
+               </button>
+               <button class="header__btn shopping-cart">
+                  <img src="img/cart.svg" class="header__btn-icon" alt="cart logo">
+                  <span class="header__btn-text">Корзина</span>
+               </button>
+            </div>
+         </div>
+      </header>
+      <!--Header ends-->
+   </div>
+
+   <!--Main Section starts-->
+   <main>
+      <div class="container">
+         <!--Bunner section starts-->
+         <section class="banner wow zoomInLeft">
+            <h1 class="banner__title">Онлайн-сервис <br> доставки еды на дом</h1>
+            <p class="banner__subtitle">
+               Блюда из любимого ресторана привезет курьер в перчатках, маске и с
+               антисептиком
+            </p>
+         </section>
+         <!--Bunner section ends-->
+
+         <!--Restaurants section starts-->
+         <section class="restaurants">
+            <div class="restaurants__title restaurants__title--aligned">
+               <h2 class="heading-2">Рестораны</h2>
+               <form action="search" class="search search-info">
+                  <input type="search" class="input search__input" id="search-info"
+                     placeholder="Поиск блюд и ресторанов" required>
+                  <label for="search-info" class="search__label">Поиск блюд и ресторанов</label>
+               </form>
+            </div>
+            <div class="cards">
+               <div class="cards__line">
+
+                  <a href="restaurant.html" class="cards__card wow fadeInUp" data-wow-delay=".2s">
+                     <img src="img/Restaurants/pizza-1.png" alt="Пицца плюс" class="cards__img">
+                     <div class="cards__text">
+                        <!-- card heading starts-->
+                        <div class="cards__title">
+                           <h3 class="heading-3">Пицца плюс</h3>
+                           <h4 class="heading-4">50 мин</h4>
+                        </div>
+                        <!-- card heading ends-->
+                        <!-- card info starts-->
+                        <div class="cards__info">
+                           <div class="cards__rating"><img src="img/Restaurants/rating.svg" alt="Rating"
+                                 class="cards__rating-icon"> 4.5</div>
+                           <div class=" cards__price">От 150 грн.</div>
+                           <div class="cards__category">Пицца</div>
+                        </div>
+                        <!-- card info ends-->
+                     </div>
+                  </a>
+
+                  <a href="restaurant.html" class="cards__card wow fadeInUp" data-wow-delay=".4s">
+                     <img src="img/Restaurants/pizza-2.png" alt="Тануки " class="cards__img">
+                     <div class="cards__text">
+                        <!-- card heading starts-->
+                        <div class="cards__title">
+                           <h3 class="heading-3">Тануки</h3>
+                           <h4 class="heading-4">30 мин</h4>
+                        </div>
+                        <!-- card heading ends-->
+                        <!-- card info starts-->
+                        <div class="cards__info">
+                           <div class="cards__rating"><img src="img/Restaurants/rating.svg" alt="Rating"
+                                 class="cards__rating-icon"> 4.3
+                           </div>
+                           <div class="cards__price">От 130 грн.</div>
+                           <div class="cards__category">Суши/Роллы</div>
+                        </div>
+                        <!-- card info ends-->
+                     </div>
+                  </a>
+
+                  <a href="restaurant.html" class="cards__card wow fadeInUp" data-wow-delay=".6s">
+                     <img src="img/Restaurants/pizza-3.png" alt="FoodBand" class="cards__img">
+                     <div class="cards__text">
+                        <!-- card heading starts-->
+                        <div class="cards__title">
+                           <h3 class="heading-3">FoodBand</h3>
+                           <h4 class="heading-4">65 мин</h4>
+                        </div>
+                        <!-- card heading ends-->
+                        <!-- card info starts-->
+                        <div class="cards__info">
+                           <div class="cards__rating"><img src="img/Restaurants/rating.svg" alt="Rating"
+                                 class="cards__rating-icon">5 </div>
+                           <div class="cards__price">От 200 грн.</div>
+                           <div class="cards__category">Пицца/Роллы</div>
+                        </div>
+                        <!-- card info ends-->
+                     </div>
+                  </a>
+
+
+                  <a href="restaurant.html" class="cards__card wow fadeInUp" data-wow-delay=".2s">
+                     <img src="img/Restaurants/pizza-4.png" alt="Жадина-пицца" class="cards__img">
+                     <div class="cards__text">
+                        <!-- card heading starts-->
+                        <div class="cards__title">
+                           <h3 class="heading-3">Жадина-пицца</h3>
+                           <h4 class="heading-4">40 мин</h4>
+                        </div>
+                        <!-- card heading ends-->
+                        <!-- card info starts-->
+                        <div class="cards__info">
+                           <div class="cards__rating"><img src="img/Restaurants/rating.svg" alt="Rating"
+                                 class="cards__rating-icon">
+                              4.6</div>
+                           <div class="cards__price">От 160 грн.</div>
+                           <div class="cards__category">Суши/Роллы</div>
+                        </div>
+                        <!-- card info ends-->
+                     </div>
+                  </a>
+
+                  <a href="restaurant.html" class="cards__card wow fadeInUp" data-wow-delay=".4s">
+                     <img src="img/Restaurants/pizza-5.png" alt="Точка еды" class="cards__img">
+                     <div class="cards__text">
+                        <!-- card heading starts-->
+                        <div class="cards__title">
+                           <h3 class="heading-3">Точка еды</h3>
+                           <h4 class="heading-4">60 мин</h4>
+                        </div>
+                        <!-- card heading ends-->
+                        <!-- card info starts-->
+                        <div class="cards__info">
+                           <div class="cards__rating"><img src="img/Restaurants/rating.svg" alt="Rating"
+                                 class="cards__rating-icon">5</div>
+                           <div class="cards__price">От 180 грн.</div>
+                           <div class="cards__category">Пицца/Роллы/Суши</div>
+                        </div>
+                        <!-- card info ends-->
+                     </div>
+                  </a>
+
+                  <a href="restaurant.html" class="cards__card wow fadeInUp" data-wow-delay=".6s">
+                     <img src="img/Restaurants/pizza-6.png" alt="Пицца плюс" class="cards__img">
+                     <div class="cards__text">
+                        <!-- card heading starts-->
+                        <div class="cards__title">
+                           <h3 class="heading-3">PizzaBurger</h3>
+                           <h4 class="heading-4">70 мин</h4>
+                        </div>
+                        <!-- card heading ends-->
+                        <!-- card info starts-->
+                        <div class="cards__info">
+                           <div class="cards__rating"><img src="img/Restaurants/rating.svg" alt="Rating"
+                                 class="cards__rating-icon"> 5</div>
+                           <div class="cards__price">От 200 грн.</div>
+                           <div class="cards__category">Пицца</div>
+                        </div>
+                        <!-- card info ends-->
+                     </div>
+                  </a>
+
+               </div>
+            </div>
+         </section>
+         <!--Restaurants section ends-->
+      </div>
+   </main>
+   <!--Main Section ends-->
+   <!--Footer starts-->
+   <footer class="footer">
+      <div class="container">
+         <div class="footer__body">
+            <a href="#" class="logo">
+               <img src="img/logo.svg" alt="Logo">
+            </a>
+            <nav class="footer__nav">
+               <ul class="footer__list">
+                  <li class="footer__item"><a href="#" class="footer__link">Ресторанам</a></li>
+                  <li class="footer__item"><a href="#" class="footer__link">Курьерам</a></li>
+                  <li class="footer__item"><a href="#" class="footer__link">Пресс-центр</a></li>
+                  <li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
+               </ul>
+            </nav>
+            <div class="footer__media">
+               <a href="https://www.google.com/" class="footer__media-link">
+                  <span class="footer__media-span">
+                     <object class="footer__media-icon" data="img/instagram.svg" type="image/svg+xml"></object>
+                  </span>
+               </a>
+               <a href="https://www.google.com/" class="footer__media-link">
+                  <span class="footer__media-span">
+                     <object class="footer__media-icon" data="img/facebook.svg" type="image/svg+xml"></object>
+                  </span>
+               </a>
+               <a href="https://www.google.com/" class="footer__media-link">
+                  <span class="footer__media-span">
+                     <object class="footer__media-icon" data="img/vk.svg" type="image/svg+xml"></object>
+                  </span>
+               </a>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!-- Modal Window starts-->
+   <div class="modal">
+      <div class="modal__dialog">
+         <div class="modal__header">
+            <h3 class="heading-3 heading-3--bigger">Корзина</h3>
+            <button class="modal__close">&times;</button>
+         </div>
+         <div class="modal__body">
+
+            <div class="modal__order-row">
+               <span class="modal__food-name">Ролл угорь стандарт</span>
+               <strong class="modal__food-price">150грн.</strong>
+               <div class="modal__food-counter">
+                  <button class="modal__counter-btn">-</button>
+                  <span class="modal__counter">1</span>
+                  <button class="modal__counter-btn">+</button>
+               </div>
+            </div>
+
+            <div class="modal__order-row">
+               <span class="modal__food-name">Ролл угорь стандарт</span>
+               <strong class="modal__food-price">150грн.</strong>
+               <div class="modal__food-counter">
+                  <button class="modal__counter-btn">-</button>
+                  <span class="modal__counter">1</span>
+                  <button class="modal__counter-btn">+</button>
+               </div>
+            </div>
+
+            <div class="modal__order-row">
+               <span class="modal__food-name">Ролл угорь стандарт</span>
+               <strong class="modal__food-price">150грн.</strong>
+               <div class="modal__food-counter">
+                  <button class="modal__counter-btn">-</button>
+                  <span class="modal__counter">1</span>
+                  <button class="modal__counter-btn">+</button>
+               </div>
+            </div>
+
+            <div class="modal__order-row">
+               <span class="modal__food-name">Ролл угорь стандарт</span>
+               <strong class="modal__food-price">150грн.</strong>
+               <div class="modal__food-counter">
+                  <button class="modal__counter-btn">-</button>
+                  <span class="modal__counter">1</span>
+                  <button class="modal__counter-btn">+</button>
+               </div>
+            </div>
+
+            <div class="modal__order-row">
+               <span class="modal__food-name">Ролл угорь стандарт</span>
+               <strong class="modal__food-price">150грн.</strong>
+               <div class="modal__food-counter">
+                  <button class="modal__counter-btn">-</button>
+                  <span class="modal__counter">1</span>
+                  <button class="modal__counter-btn">+</button>
+               </div>
+            </div>
+
+         </div>
+         <div class="modal__footer">
+            <h4 class="modal__total-price">500грн.</h4>
+            <div class="modal__footer-btn">
+               <button class="header__btn header__btn--blue">Оформить заказ</button>
+               <button class="header__btn header__btn--modal">Отмена</button>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Modal Window ends-->
+   <script src="js/wow.min.js"></script>
+   <script src="js/main.js"></script>
+</body>
+
+</html>

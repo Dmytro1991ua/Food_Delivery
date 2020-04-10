@@ -1,0 +1,54 @@
+.restaurants__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4.4rem;
+
+    @include respond(small-phone) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    &--aligned {
+        justify-content: space-between;
+    }
+}
+
+.heading-2 {
+    font-weight: bold;
+    font-size: 3.6rem;
+    line-height: 42px;
+    color: #000000;
+    margin-right: 3rem;
+
+    @include respond(phone) {
+        font-size: 2.6rem;
+    }
+
+
+    @include respond(small-phone) {
+        margin-right: 1.2rem;
+    }
+}
+
+.search-info {
+    flex: 0.306;
+
+    @include respond(tab-port) {
+        flex: 0.506;
+    }
+
+
+    @include respond(phone) {
+        flex: 0.706;
+    }
+
+
+    @include respond(small-phone) {
+        flex: 1;
+    }
+}
+
+.input {
+    background-image: url(../img/Restaurants/search.svg);
+}

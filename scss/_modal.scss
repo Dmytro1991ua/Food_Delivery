@@ -1,0 +1,129 @@
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 3;
+    overflow: auto;
+
+    &__dialog {
+        width: 95%;
+        max-width: 78rem;
+        min-height: 55rem;
+        background: #FFFFFF;
+        border-radius: 5px;
+        margin: auto;
+        padding: 2rem 2.5rem;
+
+        @include respond(tiny-phone) {
+            padding: 4rem 4.5rem;
+        }
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 4.6rem;
+    }
+
+    &__close {
+        font-size: 3.6rem;
+        border: none;
+        background-color: transparent;
+    }
+
+    &__body {
+        margin-bottom: 5.3rem;
+
+        @include respond(tiny-phone) {
+            margin-bottom: 3.3rem;
+        }
+    }
+
+    &__order-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #D9D9D9;
+
+        &:not(:last-child) {
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &__food-name {
+        font-size: 1.8rem;
+        line-height: 3.2rem;
+    }
+
+    &__food-price {
+        font-weight: bold;
+        font-size: 2rem;
+        line-height: 3.2rem;
+        margin-left: auto;
+        margin-right: 4.8rem;
+    }
+
+    &__food-counter {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    &__counter-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 3.9rem;
+        max-height: 3.2rem;
+        background: #FFFFFF;
+        border: 1px solid #40A9FF;
+        box-sizing: border-box;
+        border-radius: 2px;
+        padding: 5px 1.6rem;
+        font-size: 1.4rem;
+        color: #40A9FF;
+    }
+
+    &__counter {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        margin: 0 1.3rem;
+    }
+
+    &__footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include respond(tiny-phone) {
+            flex-direction: column;
+        }
+    }
+
+    &__total-price {
+        padding: 1.5rem 2rem;
+        border-radius: 5px;
+        font-size: 2rem;
+        line-height: 2.3rem;
+        color: #FAFAFA;
+        background: #262626;
+
+        @include respond(tiny-phone) {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__footer-btn {
+        display: flex;
+    }
+}
+
+.open-modal { //additional class which we are gonna use in JS in order to open and close modal window on click
+    display: flex;
+}
