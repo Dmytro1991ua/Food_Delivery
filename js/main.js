@@ -16,9 +16,7 @@ function runModalWindow() {
 runModalWindow();
 
 //activate WOW.js
-new WOW().init({
-   mobile: false
-});
+new WOW({ mobile: false }).init();
 
 
 
